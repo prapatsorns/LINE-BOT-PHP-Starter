@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 				case 'สวัสดี':
 					$msg ='สวัสดีค่ะ';
 					break;
-				case 'โมจื':
+				case 'โมจิ':
 					$msg ='เรียนโมจิสุดสวย ทำไมคะ อิอิ';
 					break;
 				default:
