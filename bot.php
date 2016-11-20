@@ -13,10 +13,24 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+
+			switch ($text) {
+				case 'Hi':
+					$msg ='สวัสดีค่ะ'
+					break;
+				case 'สวัสดี':
+					$msg ='สวัสดีค่ะ'
+					break;
+					
+				default:
+					$msg = 'ฉันไม่เข้าใจ ??'
+					break;
+			}
+
 			// Get replyToken
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $msg
 			];
 			
 		
@@ -29,7 +43,7 @@ if (!is_null($events['events'])) {
 			
 			$messages = [
 				'type' => 'text',
-				'text' => 'พิมพ์ข้อความสิคะ ฉันไม่เข้าใจ (bittersmile)'
+				'text' => 'ฉันไม่เข้าใจ ??'
 			];
 			$replyToken = $event['replyToken'];
 		}
