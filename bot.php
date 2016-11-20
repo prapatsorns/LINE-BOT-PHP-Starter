@@ -14,13 +14,20 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
-			$replyToken = $event['replyToken'];
-
-			// Build message to reply back
 			$messages = [
 				'type' => 'text',
 				'text' => $text
 			];
+			
+		}else{
+			$messages = [
+				'type' => 'text',
+				'text' => พิมพ์ข้อความสิคะ'
+			];
+		}	
+			$replyToken = $event['replyToken'];
+			// Build message to reply back
+			
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
@@ -41,7 +48,7 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-		}
+		
 	}
 }
 echo "OK";
