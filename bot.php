@@ -19,12 +19,7 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 			
-		}else{
-			$messages = [
-				'type' => 'text',
-				'text' => พิมพ์ข้อความสิคะ'
-			];
-		}	
+		
 			$replyToken = $event['replyToken'];
 			// Build message to reply back
 			
