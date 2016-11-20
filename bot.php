@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 			
 			$messages = [
 				'type' => 'text',
-				'text' => 'พิมข้อความสิคะ'
+				'text' => 'พิมพ์ข้อความสิคะ ฉันไม่เข้าใจ (bittersmile)'
 			];
 			$replyToken = $event['replyToken'];
 		}
