@@ -16,14 +16,14 @@ if (!is_null($events['events'])) {
 
 			switch ($text) {
 				case 'Hi':
-					$msg ='สวัสดีค่ะ'
+					$msg ='สวัสดีค่ะ';
 					break;
 				case 'สวัสดี':
-					$msg ='สวัสดีค่ะ'
+					$msg ='สวัสดีค่ะ';
 					break;
-					
+
 				default:
-					$msg = 'ฉันไม่เข้าใจ ??'
+					$msg = 'ฉันไม่เข้าใจ ??';
 					break;
 			}
 
